@@ -1,0 +1,9 @@
+model : models\inception_v1_224_quant.tflite
+num_iterations : 1000
+
+data:
+  image_path : data\Insecta_val
+delegates : delegate\libedgetpu.so.1.0
+system :
+    os : windows # windows
+    device : cpu
